@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Analytics | Global Lottery Swarm Engine</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <header class="navbar">
+      <div class="brand">
+        <span class="logo-icon">◈</span>
+        <h1>NEXUS <span>LOTTO AI</span></h1>
+      </div>
+      <div class="status-badge">
+        <span class="status-dot"></span> SWARM LIVE
+      </div>
+    </header>
+
+    <main class="dashboard-grid">
+      <aside class="panel sidebar">
+        <h2>LOTTERY SELECTION</h2>
+        <div id="lottery-selector" class="selector-list"></div>
+
+        <div class="card-divider"></div>
+
+        <h2>MODEL PERFORMANCE</h2>
+        <div class="stat-card">
+          <span class="stat-label">Historical Accuracy</span>
+          <span id="model-accuracy" class="stat-value">--%</span>
+        </div>
+      </aside>
+
+      <section class="panel analytics-view">
+        <header class="panel-header">
+          <h2 id="active-lottery-title">Select a Lottery</h2>
+          <span id="active-lottery-meta" class="meta-tag">--</span>
+        </header>
+
+        <div class="prediction-box">
+          <h3>NEXT DRAW PROBABILISTIC PREDICTION</h3>
+          <div id="predicted-balls" class="ball-row"></div>
+        </div>
+
+        <div class="heatmap-container">
+          <h3>FREQUENCY HEATMAP</h3>
+          <div id="heatmap-grid" class="heatmap-grid"></div>
+        </div>
+
+        <div class="trends-row">
+          <div class="trend-card">
+            <h4>HOT NUMBERS</h4>
+            <div id="hot-numbers" class="badge-list"></div>
+          </div>
+          <div class="trend-card">
+            <h4>COLD NUMBERS</h4>
+            <div id="cold-numbers" class="badge-list"></div>
+          </div>
+          <div class="trend-card">
+            <h4>METRICS</h4>
+            <p id="even-odd" class="trend-text">Even/Odd Ratio: --</p>
+            <p id="avg-sum" class="trend-text">Average Sum: --</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
